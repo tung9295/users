@@ -11,3 +11,8 @@ var userSchema = new mongoose.Schema({
 var User = mongoose.model('User', userSchema, 'users');
 
 module.exports  = User;
+
+// "email": "tung9295@gmail.com",
+// "password": "tung12345",
+// "name": "tung",
+// "phone": "0808080808"
