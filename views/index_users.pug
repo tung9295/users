@@ -1,0 +1,20 @@
+html
+    head
+        title MyProject-Users
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous")
+    body
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+            ul.navbar-nav.mr-auto
+                li.nav-item.active
+                    a.nav-link(href='#') HOME 
+                li.nav-item.active
+                    a.nav-link(href='/users/list') LIST
+                li.nav-item.active
+                    a.nav-link(href='/users/create') CREATE
+                li.nav-item.active
+                    a.nav-link(href='/users/delete') DELETE
+
+            form.form-inline.my-2.my-lg-0(method='GET' action='/users/search')
+                input.form-control.mr-sm-2(type='search' placeholder='Search...' name='input-name')
+                button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
