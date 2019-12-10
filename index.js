@@ -9,14 +9,14 @@ require('dotenv').config();
 var pug = require('pug');
 
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGO_URL);
+mongoose.connect(process.env.MONGO_URL)
 // var User = require('./models/user_models');
 
 app.set('views', './views');
 app.set('view engine', 'pug');
 
 app.get('/', function(req, res) {
-    res.render('index_users');
+    res.render('index');
 });
 
 app.use('/users', userRoutes);
